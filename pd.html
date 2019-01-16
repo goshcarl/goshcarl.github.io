@@ -99,6 +99,20 @@ img {
     height: auto;
 }
 
+.vidvicious{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.vidvicious iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 </style>
 
 <meta charset="utf-8"/>
@@ -153,7 +167,7 @@ img {
 	<thetext>
 
 <p class=lets>
-I've worked out some fun patches in vanilla pure data. They are for you. I'm in debt to <a href="http://www.katjaas.nl/home/home.html">Katja</a>, and pd forums user <a href="https://forum.pdpatchrepo.info/user/maelstorm"> Maelstorm</a>, especially <a href="https://forum.pdpatchrepo.info/topic/6185/feedback-fm-algorithm"> this thread</a>.<br>
+I've worked out some fun patches in vanilla pure data. They are for you.<br>
 </p>
 
 
@@ -162,13 +176,15 @@ I've worked out some fun patches in vanilla pure data. They are for you. I'm in 
 <h3>Bedtime, sequenced resonator synthesizer</h3>
 
 <p class=lets>
-After finding a way to make a very excellent sound, I wanted to share it with the world. I decided to emulate the hardware setup in puredata so the sound could be anyones for free. The heart of the hardware setup was a 4 channel eq/compressor/expander that I set up to generate noises using a no-input technique. The outputs were routed back to the inputs through passive voltage controlled attenuators that were sequenced with a Korg sequencer. This made very charming pitch sweeps that I fed into an fx unit with MIDI controlled resonators. As the pitch sweeps go through the harmonics of the resonators, they respond by ringing. The feeling is sort of like sweeping an omnichord. The resulting sound is more complex.</p>
+In 2017, I made an incredible sound with some music hardware. The system generates rhythmically animated chordal drones that follow the pitches played on a MIDI keyboard. The resulting sound is very fun to sample because of its rhythmic and harmonic complexity. Instead of making a shopping list of the hardware I used, I developed a pure data patch that could be spread around for free.</p>
 
 <p class=lets>
 <a href="https://patchstorage.com/bedtime/">Download Bedtime here</a>
 </p>
 
+	<div class="vidvicious">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QIb0Lg4qaKE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
 
 <p class=lets>
 </p>
@@ -177,14 +193,16 @@ After finding a way to make a very excellent sound, I wanted to share it with th
 <h3>Keytrails, pitched delay line</h3>
 
 <p class=lets>
-I've been after this concept in a delay patch for a long time, since using the BOSS RSD-10, which has an audio input that tracks pitch to alter delay time chromatically. This puredata patch is more free than a used RSD-10.
+The BOSS RSD-10 delay effect has a wonderful feature. An extra audio input tracks pitch to alter delay time chromatically. The sampling rate of the delay buffer is shifted to transpose all the sound in the buffer together. Depending on the internal architecture of digital pitch-shifting delay effects, this isn’t always easy to achieve. This pure data patch takes a crack at it and includes a queue for pitch shifts that force transpotions to be complete and subsequent.
 </p>
 
 <p class=lets>
 <a href="https://patchstorage.com/keytrails/">Download Keytrails here</a>
 </p>
 
+	<div class="vidvicious">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ufEbst_8cys?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
 
 <p class=lets>
 </p>
@@ -202,7 +220,9 @@ Here's the result of my effort to do analog modeling in pd-vanilla.
 <a href="https://patchstorage.com/parody-1/">Parody Test Type, early revision, charming mechanic</a> <br>
 </p>
 
+	<div class="vidvicious">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pgZvEj-Vz1A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
 
 <br>
 

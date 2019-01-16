@@ -99,6 +99,20 @@ img {
     height: auto;
 }
 
+.vidvicious{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.vidvicious iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 </style>
 
 <meta charset="utf-8"/>
@@ -155,7 +169,9 @@ img {
 <a name="Duophonic">
 <h3>Duophonic Guitar Pickup</h3>
 
+	<div class="vidvicious">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jvMHfpch2dw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
 
 <p class=lets>
 This custom pickup outputs 2 signals instead of the standard 1 signal of a mono passive pickup. It is different than other stereo pickups in that individual strings are sent to one or the other of the 2 outputs. On my 4 string tenor guitar, I send the 1st and 3rd strings to the first output, and the 2nd and 4th strings to the second output. By processing the two outputs differently, one can achieve clearer chords through overdrive/distortion, selective inversion pitch shifting, and lots of other fun stuff. The whole project rides on the integration of a phono preamp, which makes the sound produced by the small custom pickups acceptable.
@@ -220,7 +236,9 @@ And finally, output to 2 mono 1/4" outputs.<br>
 <a name="Toy">
 <h3>Toy Piano Magnetic Pickup</h3>
 
+	<div class="vidvicious">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8FRj3I-THKQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
 
 <p class=lets>
 These pickups were made with relatively weak magnets and were mounted haphazardly with school glue. I believe you could achieve an excellent toy piano pickup by using strong magnets, and an inductor per tine. This way you could position each precisely. The resulting system would have a much higher output which should help the noise problem. You could likely test placing a capacitor in line or an inductor to ground to filter out the sub 200hz nonsense passively before hitting the preamp. If this reduced the output strength too much, it'd be a matter of applying high-pass after the preamp. 
@@ -237,7 +255,9 @@ These pickups were made with relatively weak magnets and were mounted haphazardl
 Play with the dampers on your piano to achieve nice sympathetic vibrations. You can get a washy sustain-pedal resonance during staccato passages if you use some tricks with the sostenuto pedal or heavy objects.
 </p>
 
+	<div class="vidvicious">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B6C1VDQarfc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
 
 <p class=lets>
 </p>
@@ -249,7 +269,9 @@ Play with the dampers on your piano to achieve nice sympathetic vibrations. You 
 <a name="Harmonizers">
 <h3>Harmonizers</h3>
 
+	<div class="vidvicious">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rLWKuBJwskM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
 
 <p class=lets>
 I used to wonder about rackmount digital harmonizers. Turns out, it is great fun to use one with a MIDI keyboard to convert a monophonic signal into chords. I set up an E-mu Proteus FX to generate mono sounds from MIDI input. This signal went into the harmonizer to convert it into polyphonic output. I also added a modulator that applied incorrect keyscaling to the pitch of the Proteus sounds. This meant that the mono output of the Proteus FX was not following the pitch correctly at all. This results in different tonal colors from the harmonizer depending on how hard it's working to bring the input stream back into pitch. I noticed some really wild noises when retriggering notes. This was due to the Proteus nulling the incorrect pitch tracking during legato passages. When a held note was returned to, the Proteus would play the correct pitch. Here's a graphic:
@@ -258,7 +280,6 @@ I used to wonder about rackmount digital harmonizers. Turns out, it is great fun
 <img src="devices/digiprot.jpg" alt= width=408 height=306>
 
 <p class=lets>
-Anyway, tons of fun.
 </p>
 
 <a href="#Top">To top</a>
@@ -268,7 +289,9 @@ Anyway, tons of fun.
 <a name="Tunings">
 <h3>Four String Tunings</h3>
 
+	<div class="vidvicious">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wr2E5ZQnHRU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
 
 <p class=lets>
 Six string standard tuning guitar is too hard to play. A tenor guitar clocks in at four strings and is nice and easy to make sense of with it's symmetrical layout. You will eventually tire of the wide spacing of the fifths tuning. When that happens, reach for a left-handed guitar and remove the two highest strings. All four strings of your resulting instrument will be re-entrant, tuned to inverted fifths. That is, each goes down a fourth instead of up a fifth. The shapes of chords will feel familiar but sound totally fresh, the voicings being much denser.
